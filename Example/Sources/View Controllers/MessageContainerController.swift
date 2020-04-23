@@ -82,7 +82,8 @@ final class MessageContainerController: UIViewController {
         let headerHeight: CGFloat = 200
         mapView.frame = CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: headerHeight))
         bannerView.frame = CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: headerHeight))
-        conversationViewController.view.frame = CGRect(x: 0, y: headerHeight, width: view.bounds.width, height: view.bounds.height - headerHeight)
+        conversationViewController.view.frame = CGRect(x: view.bounds.width / 4, y: headerHeight, width: view.bounds.width / 2, height: view.bounds.height - headerHeight)
+        
     }
     
 }
